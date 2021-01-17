@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FocusEntity",
+        "repositoryURL": "https://github.com/maxxfrazer/FocusEntity",
+        "state": {
+          "branch": null,
+          "revision": "88112e67f2169f70972537f12d5e46cefec9693b",
+          "version": "2.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
