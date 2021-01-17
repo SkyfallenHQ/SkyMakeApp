@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		2C51608325B49FF60051DC09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51608225B49FF60051DC09 /* ContentView.swift */; };
 		2C51608725B49FF80051DC09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C51608625B49FF80051DC09 /* Assets.xcassets */; };
 		2C51608A25B49FF80051DC09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C51608925B49FF80051DC09 /* Preview Assets.xcassets */; };
+		2C51609425B4A3FA0051DC09 /* WebEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51609325B4A3FA0051DC09 /* WebEmbed.swift */; };
+		2C596B7025B4D2B7002AA054 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B6F25B4D2B7002AA054 /* Model.swift */; };
+		2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 2C596B7325B4D76A002AA054 /* FocusEntity */; };
+		2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */; };
+		2C7722F925B4ABAC003A16D2 /* planets.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722F825B4ABAC003A16D2 /* planets.usdz */; };
+		2C7722FC25B4ABB5003A16D2 /* skeleton.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */; };
+		2C7722FF25B4ABBD003A16D2 /* pulley.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FE25B4ABBD003A16D2 /* pulley.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,12 @@
 		2C51608625B49FF80051DC09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C51608925B49FF80051DC09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C51608B25B49FF80051DC09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C51609325B4A3FA0051DC09 /* WebEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebEmbed.swift; sourceTree = "<group>"; };
+		2C596B6F25B4D2B7002AA054 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyMakeARView.swift; sourceTree = "<group>"; };
+		2C7722F825B4ABAC003A16D2 /* planets.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = planets.usdz; sourceTree = "<group>"; };
+		2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = skeleton.usdz; sourceTree = "<group>"; };
+		2C7722FE25B4ABBD003A16D2 /* pulley.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pulley.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +66,8 @@
 		2C51607F25B49FF60051DC09 /* SkyMake App */ = {
 			isa = PBXGroup;
 			children = (
+				2C7722F725B4AB6F003A16D2 /* Classes */,
+				2C7722F625B4AB69003A16D2 /* Models */,
 				2C51608025B49FF60051DC09 /* AppDelegate.swift */,
 				2C51608225B49FF60051DC09 /* ContentView.swift */,
 				2C51608625B49FF80051DC09 /* Assets.xcassets */,
@@ -67,6 +83,26 @@
 				2C51608925B49FF80051DC09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C7722F625B4AB69003A16D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C7722FE25B4ABBD003A16D2 /* pulley.usdz */,
+				2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */,
+				2C7722F825B4ABAC003A16D2 /* planets.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C7722F725B4AB6F003A16D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C51609325B4A3FA0051DC09 /* WebEmbed.swift */,
+				2C596B6F25B4D2B7002AA054 /* Model.swift */,
+				2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +121,9 @@
 			dependencies = (
 			);
 			name = "SkyMake App";
+			packageProductDependencies = (
+				2C596B7325B4D76A002AA054 /* FocusEntity */,
+			);
 			productName = "SkyMake App";
 			productReference = 2C51607D25B49FF60051DC09 /* SkyMake App.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 2C51607425B49FF60051DC09;
+			packageReferences = (
+				2C596B7225B4D76A002AA054 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 2C51607E25B49FF60051DC09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +170,9 @@
 			files = (
 				2C51608A25B49FF80051DC09 /* Preview Assets.xcassets in Resources */,
 				2C51608725B49FF80051DC09 /* Assets.xcassets in Resources */,
+				2C7722FF25B4ABBD003A16D2 /* pulley.usdz in Resources */,
+				2C7722FC25B4ABB5003A16D2 /* skeleton.usdz in Resources */,
+				2C7722F925B4ABAC003A16D2 /* planets.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C51608325B49FF60051DC09 /* ContentView.swift in Sources */,
+				2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */,
+				2C51609425B4A3FA0051DC09 /* WebEmbed.swift in Sources */,
 				2C51608125B49FF60051DC09 /* AppDelegate.swift in Sources */,
+				2C596B7025B4D2B7002AA054 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +320,7 @@
 				DEVELOPMENT_TEAM = HV45H4766M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SkyMake App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +342,7 @@
 				DEVELOPMENT_TEAM = HV45H4766M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SkyMake App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C596B7225B4D76A002AA054 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C596B7325B4D76A002AA054 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C596B7225B4D76A002AA054 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C51607525B49FF60051DC09 /* Project object */;
 }
