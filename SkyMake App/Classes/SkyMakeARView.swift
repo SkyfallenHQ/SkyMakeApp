@@ -4,14 +4,12 @@
 //
 //  Created by Yigit Kerem Oktay on 17.01.2021.
 //
-
 import ARKit
 import FocusEntity
 import RealityKit
 import SwiftUI
 import UIKit
 import Combine
-
 
 class SkyMakeARView: ARView{
     var focusEntity: FocusEntity?

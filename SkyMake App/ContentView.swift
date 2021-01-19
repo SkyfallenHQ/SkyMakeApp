@@ -11,173 +11,127 @@ import ARKit
 
 struct ContentView : View {
     
-    @State private var isModelPicked = false
-    @State private var pickedModel: Model?
-    @State private var modelConfirmedforPlacement: Model?
+    @State private var username: String?
+    @State private var password: String?
+    @State private var userRole: String?
     
-    private var models: [Model] = {
-        
-        let filemanager = FileManager.default
-        
-        guard let path = Bundle.main.resourcePath, let files = try? filemanager.contentsOfDirectory(atPath: path) else {
-            return []
-        }
-        
-        var availableModels: [Model] = []
-        
-        for filename in files where filename.hasSuffix("usdz") {
-            let modelName = filename.replacingOccurrences(of: ".usdz", with: "")
-            
-            let model = Model(modelName: modelName)
-            
-            availableModels.append(model)
-        }
-        
-        return availableModels
-    }()
+    @State var apiEndpoint: String = "http://192.168.0.138:6810"
+    @State var appURL: String = "http://192.168.0.138:6713"
+    @State var meetServer: String = "https://meet.jit.si"
+    
+    @State private var currentPage: String = "Login"
+    @State private var currentExam: String = ""
+    @State private var currentDoc: String = ""
+    @State private var currentMeeting: String = ""
+    
+    
+    let hc_ws = WebEmbed()
     
     var body: some View {
-        ZStack(alignment: .bottom){
-            ARViewContainer(modelConfirmedforPlacement: self.$modelConfirmedforPlacement)
-            if(self.isModelPicked){
-                ModelPlacementConfirmView(isModelPicked: self.$isModelPicked, pickedModel: self.$pickedModel, modelConfirmedforPlacement: self.$modelConfirmedforPlacement)
-            } else {
-                ModelPickerView(isModelPicked: self.$isModelPicked, pickedModel: self.$pickedModel, models: self.models)
-            }
-        }.ignoresSafeArea(edges: .all)
-    }
-}
-
-struct ModelPickerView: View {
-    
-    @Binding var isModelPicked: Bool
-    @Binding var pickedModel: Model?
-
-    var models: [Model]
-    
-    var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 30){
-                ForEach(0 ..< self.models.count) {
-                    index in
-                    Button(action: {
-                        print("SkyMake App | DEBUG: AR Model selected from:  \(self.models[index])")
-                        
-                        self.pickedModel = self.models[index]
-                        
-                        self.isModelPicked = true
-                    }){
-                        Image(uiImage: self.models[index].image)
-                            .resizable()
-                            .scaledToFill()
-                            .padding(20)
-                            .frame(width: 100, height: 100, alignment: .center)
-                            .clipped()
-                            .background(Color.white.opacity(0.8))
-                            .cornerRadius(25)
+        
+        VStack(spacing:0){
+            
+            HStack{
+                
+                Image(uiImage: UIImage(named: "SkyMakeLogo")!)
+                    .resizable()
+                    .frame(width: 45, height: 25, alignment: .center)
+                
+                
+                ScrollView(.horizontal, showsIndicators: false){
+                    
+                    HStack(alignment: .center,spacing: 30){
+                        if userRole != "unverified" && username != nil {
+                            Button(action: {
+                                self.currentPage = "Home"
+                            }) {
+                                Text("Home")
+                                    .foregroundColor(.white)
+                            }
+                            
+                            Button(action: {
+                                self.currentPage = "AR"
+                            }) {
+                                Text("AR")
+                                    .foregroundColor(.white)
+                            }
+                            Button(action: {
+                                self.currentPage = "Help"
+                            }) {
+                                Text("Help")
+                                    .foregroundColor(.white)
+                            }
+                        }
                     }
-                    .buttonStyle(PlainButtonStyle())
+                    
+                }
+                .frame(height: 50)
+                
+                if username != nil {
+                    Button(action: {
+                        username = nil
+                        password = nil
+                        userRole = nil
+                        currentPage = "Login"
+                    }){
+                        Text("Log out")
+                            .foregroundColor(.white)
+                    }
+                } else {
+                    Text("You are logged out, please login")
+                        .foregroundColor(.white)
                 }
             }
-        }
-        .padding(20)
-        .background(Color.black.opacity(0.5))
-        .padding(.bottom, 50)
-    }
-}
-
-struct ModelPlacementConfirmView: View {
-    
-    @Binding var isModelPicked: Bool
-    @Binding var pickedModel: Model?
-    @Binding var modelConfirmedforPlacement: Model?
-    
-    var body: some View {
-        
-        HStack{
-            Button(action: {
-                print("SkyMake App | DEBUG: Item placement cancelled by user")
-                resetModelPickedState()
-            }){
-                Image(systemName: "xmark")
-                    .frame(width: 60, height: 60)
-                    .font(.title)
-                    .background(Color.white.opacity(0.75))
-                    .cornerRadius(30)
-                    .padding(20)
-            }
-            Button(action: {
-                print("SkyMake App | DEBUG: Item placement confirmed by user")
-                
-                self.modelConfirmedforPlacement = self.pickedModel
-                
-                resetModelPickedState()
-            }){
-                Image(systemName: "checkmark")
-                    .frame(width: 60, height: 60)
-                    .font(.title)
-                    .background(Color.white.opacity(0.75))
-                    .cornerRadius(30)
-                    .padding(20)
-            }
-        }
-        
-    }
-    func resetModelPickedState() {
-        
-        self.isModelPicked = false
-        print("SkyMake App | DEBUG: Set ModelPicked State to initial value: (Bool) false")
-        self.pickedModel = nil
-        print("SkyMake App | DEBUG: Set pickedModel State to a nil value")
-        
-    }
-}
-
-struct ARViewContainer: UIViewRepresentable {
-    
-    @Binding var modelConfirmedforPlacement: Model?
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = SkyMakeARView(frame: .zero)//ARView(frame: .zero)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {
-        
-        if let model = self.modelConfirmedforPlacement {
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
+            .background(Color.init(UIColor(red: 0.22, green: 0.21, blue: 0.21, alpha: 1.00)))
+            switch self.currentPage{
             
-            if let modelEntity = model.modelEntity {
-               
-                print("SkyMake App | DEBUG: Adding model to the AR Scene, Model Name: \(model.modelName)")
-                
-                let anchorEntity = AnchorEntity(plane: .any)
-                
-                anchorEntity.addChild(modelEntity.clone(recursive: true))
-                
-                uiView.scene.addAnchor(anchorEntity)
-                
-            } else {
-                
-                print("SkyMake App | DEBUG: Failed to load model entity for model: \(model.modelName)")
-                
-            }
+            case "Home":
+                if userRole == "unverified" {
+                    Spacer()
+                    HStack{
+                        Text("Your account is not yet approved.")
+                            .font(.title)
+                            .foregroundColor(Color.black)
+                    }
+                    Spacer()
+                } else {
+                    HomeView(username: self.$username, password: self.$password, apiEndpoint: self.$apiEndpoint, meetServer: self.$meetServer, currentPage: self.$currentPage, currentExam: self.$currentExam, currentDoc: self.$currentDoc, currentMeeting: self.$currentMeeting, appURL: self.$appURL)
+                }
             
-            DispatchQueue.main.async {
-                self.modelConfirmedforPlacement = nil
+            case "OES":
+                OESView(appURL: self.$appURL, username: self.$username, password: self.$password, currentExam: self.$currentExam)
+                
+            case "Document":
+                AttachmentView(appURL: self.$appURL, currentDoc: self.$currentDoc)
+                
+            case "AR":
+                SelfServedARView()
+                
+            case "Liveclass":
+                MeetView(meetServer: self.$meetServer, meetCode: self.$currentMeeting)
+            
+            case "Help":
+                hc_ws
+                    .onAppear(){
+                        hc_ws.load(url: URL(string:"https://help.skymake.theskyfallen.com")!)
+                    }
+                
+            case "Login":
+                LoginView(username: self.$username, password: self.$password, currentPage: self.$currentPage, userRole: self.$userRole, apiEndpoint: self.$apiEndpoint)
+                
+            default:
+                Spacer()
+                HStack{
+                    Text("404. Not found, but in SwiftUI :)")
+                        .foregroundColor(Color.black)
+                }
+                Spacer()
+                
             }
+            }
+            .background(Color.white)
         }
         
-    }
-    
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif

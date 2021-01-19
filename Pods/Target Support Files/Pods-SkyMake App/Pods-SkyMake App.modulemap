@@ -1,0 +1,6 @@
+framework module Pods_SkyMake_App {
+  umbrella header "Pods-SkyMake App-umbrella.h"
+
+  export *
+  module * { export * }
+}

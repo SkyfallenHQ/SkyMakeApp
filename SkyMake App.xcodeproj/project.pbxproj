@@ -7,20 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4F0EBC25B5849C00145C08 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F0EBB25B5849C00145C08 /* ARViewContainer.swift */; };
+		2C4F0EBF25B584E300145C08 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F0EBE25B584E300145C08 /* ModelPickerView.swift */; };
+		2C4F0EC325B5852600145C08 /* ModelPlacementConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F0EC225B5852600145C08 /* ModelPlacementConfirmView.swift */; };
 		2C51608125B49FF60051DC09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51608025B49FF60051DC09 /* AppDelegate.swift */; };
 		2C51608325B49FF60051DC09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51608225B49FF60051DC09 /* ContentView.swift */; };
 		2C51608725B49FF80051DC09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C51608625B49FF80051DC09 /* Assets.xcassets */; };
 		2C51608A25B49FF80051DC09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C51608925B49FF80051DC09 /* Preview Assets.xcassets */; };
 		2C51609425B4A3FA0051DC09 /* WebEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51609325B4A3FA0051DC09 /* WebEmbed.swift */; };
 		2C596B7025B4D2B7002AA054 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B6F25B4D2B7002AA054 /* Model.swift */; };
-		2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 2C596B7325B4D76A002AA054 /* FocusEntity */; };
+		2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 2C596B7325B4D76A002AA054 /* FocusEntity */; };
 		2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */; };
 		2C7722F925B4ABAC003A16D2 /* planets.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722F825B4ABAC003A16D2 /* planets.usdz */; };
 		2C7722FC25B4ABB5003A16D2 /* skeleton.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */; };
 		2C7722FF25B4ABBD003A16D2 /* pulley.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FE25B4ABBD003A16D2 /* pulley.usdz */; };
+		2C7C5EA825B5869E00B01373 /* SelfServedARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EA725B5869E00B01373 /* SelfServedARView.swift */; };
+		2C7C5EAC25B58AD100B01373 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EAB25B58AD100B01373 /* UIColor.swift */; };
+		2C7C5EAF25B58F3A00B01373 /* CourseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EAE25B58F3A00B01373 /* CourseCardView.swift */; };
+		2C7C5EB225B597DB00B01373 /* CourseOverviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EB125B597DB00B01373 /* CourseOverviewCardView.swift */; };
+		2C7C5EB825B5A2B300B01373 /* FullCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EB725B5A2B300B01373 /* FullCourseView.swift */; };
+		2C7C5EBB25B5D06000B01373 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EBA25B5D06000B01373 /* LoginView.swift */; };
+		2C7C5EBF25B5E57700B01373 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EBE25B5E57700B01373 /* APIResponse.swift */; };
+		2C7C5EC725B5F92B00B01373 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EC625B5F92B00B01373 /* HomeView.swift */; };
+		2C89F88125B743F200BADA86 /* JitsiEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F88025B743F200BADA86 /* JitsiEmbed.swift */; };
+		2C89F89725B74DE400BADA86 /* MeetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F89625B74DE400BADA86 /* MeetView.swift */; };
+		2CA2383525B6F07400941D07 /* OESView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2383425B6F07400941D07 /* OESView.swift */; };
+		2CA2383825B7011A00941D07 /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2383725B7011A00941D07 /* AttachmentView.swift */; };
+		FC5A79706D0DA2A2B9AFB9E4 /* Pods_SkyMake_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C156334F24E114E50EB21 /* Pods_SkyMake_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4F0EBB25B5849C00145C08 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		2C4F0EBE25B584E300145C08 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		2C4F0EC225B5852600145C08 /* ModelPlacementConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlacementConfirmView.swift; sourceTree = "<group>"; };
 		2C51607D25B49FF60051DC09 /* SkyMake App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyMake App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C51608025B49FF60051DC09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C51608225B49FF60051DC09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +52,22 @@
 		2C7722F825B4ABAC003A16D2 /* planets.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = planets.usdz; sourceTree = "<group>"; };
 		2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = skeleton.usdz; sourceTree = "<group>"; };
 		2C7722FE25B4ABBD003A16D2 /* pulley.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pulley.usdz; sourceTree = "<group>"; };
+		2C7C5EA725B5869E00B01373 /* SelfServedARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfServedARView.swift; sourceTree = "<group>"; };
+		2C7C5EAB25B58AD100B01373 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2C7C5EAE25B58F3A00B01373 /* CourseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCardView.swift; sourceTree = "<group>"; };
+		2C7C5EB125B597DB00B01373 /* CourseOverviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOverviewCardView.swift; sourceTree = "<group>"; };
+		2C7C5EB425B59FDF00B01373 /* SkyMake App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SkyMake App.entitlements"; sourceTree = "<group>"; };
+		2C7C5EB725B5A2B300B01373 /* FullCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCourseView.swift; sourceTree = "<group>"; };
+		2C7C5EBA25B5D06000B01373 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2C7C5EBE25B5E57700B01373 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		2C7C5EC625B5F92B00B01373 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2C89F88025B743F200BADA86 /* JitsiEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiEmbed.swift; sourceTree = "<group>"; };
+		2C89F89625B74DE400BADA86 /* MeetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetView.swift; sourceTree = "<group>"; };
+		2CA2383425B6F07400941D07 /* OESView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OESView.swift; sourceTree = "<group>"; };
+		2CA2383725B7011A00941D07 /* AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentView.swift; sourceTree = "<group>"; };
+		5ABCDDF07C03C94745300DE9 /* Pods-SkyMake App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyMake App.debug.xcconfig"; path = "Target Support Files/Pods-SkyMake App/Pods-SkyMake App.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6C156334F24E114E50EB21 /* Pods_SkyMake_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyMake_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41882F35C8736ED07E62BB8 /* Pods-SkyMake App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyMake App.release.xcconfig"; path = "Target Support Files/Pods-SkyMake App/Pods-SkyMake App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +76,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */,
+				FC5A79706D0DA2A2B9AFB9E4 /* Pods_SkyMake_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4F0EB725B583FE00145C08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C4F0EBB25B5849C00145C08 /* ARViewContainer.swift */,
+				2C4F0EBE25B584E300145C08 /* ModelPickerView.swift */,
+				2C4F0EC225B5852600145C08 /* ModelPlacementConfirmView.swift */,
+				2C7C5EA725B5869E00B01373 /* SelfServedARView.swift */,
+				2C7C5EAE25B58F3A00B01373 /* CourseCardView.swift */,
+				2C7C5EB125B597DB00B01373 /* CourseOverviewCardView.swift */,
+				2C7C5EB725B5A2B300B01373 /* FullCourseView.swift */,
+				2C7C5EBA25B5D06000B01373 /* LoginView.swift */,
+				2C7C5EC625B5F92B00B01373 /* HomeView.swift */,
+				2CA2383425B6F07400941D07 /* OESView.swift */,
+				2CA2383725B7011A00941D07 /* AttachmentView.swift */,
+				2C89F89625B74DE400BADA86 /* MeetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2C51607425B49FF60051DC09 = {
 			isa = PBXGroup;
 			children = (
 				2C51607F25B49FF60051DC09 /* SkyMake App */,
 				2C51607E25B49FF60051DC09 /* Products */,
+				6B503F187F3FA1BD7FB2E379 /* Pods */,
+				314DAD0D1C45823C278B9708 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +123,10 @@
 		2C51607F25B49FF60051DC09 /* SkyMake App */ = {
 			isa = PBXGroup;
 			children = (
+				2C7C5EBD25B5E56700B01373 /* Structures */,
+				2C7C5EB425B59FDF00B01373 /* SkyMake App.entitlements */,
+				2C7C5EAA25B58AC400B01373 /* Extensions */,
+				2C4F0EB725B583FE00145C08 /* Views */,
 				2C7722F725B4AB6F003A16D2 /* Classes */,
 				2C7722F625B4AB69003A16D2 /* Models */,
 				2C51608025B49FF60051DC09 /* AppDelegate.swift */,
@@ -101,8 +162,42 @@
 				2C51609325B4A3FA0051DC09 /* WebEmbed.swift */,
 				2C596B6F25B4D2B7002AA054 /* Model.swift */,
 				2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */,
+				2C89F88025B743F200BADA86 /* JitsiEmbed.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C7C5EAA25B58AC400B01373 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C5EAB25B58AD100B01373 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C7C5EBD25B5E56700B01373 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C5EBE25B5E57700B01373 /* APIResponse.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		314DAD0D1C45823C278B9708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6C156334F24E114E50EB21 /* Pods_SkyMake_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B503F187F3FA1BD7FB2E379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ABCDDF07C03C94745300DE9 /* Pods-SkyMake App.debug.xcconfig */,
+				A41882F35C8736ED07E62BB8 /* Pods-SkyMake App.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C51608E25B49FF80051DC09 /* Build configuration list for PBXNativeTarget "SkyMake App" */;
 			buildPhases = (
+				5BABCDF28B5778668B8B3185 /* [CP] Check Pods Manifest.lock */,
 				2C51607925B49FF60051DC09 /* Sources */,
 				2C51607A25B49FF60051DC09 /* Frameworks */,
 				2C51607B25B49FF60051DC09 /* Resources */,
+				13D36BC306A428AF752B8CBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +275,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13D36BC306A428AF752B8CBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyMake App/Pods-SkyMake App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyMake App/Pods-SkyMake App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyMake App/Pods-SkyMake App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BABCDF28B5778668B8B3185 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyMake App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C51607925B49FF60051DC09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,9 +324,24 @@
 			files = (
 				2C51608325B49FF60051DC09 /* ContentView.swift in Sources */,
 				2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */,
+				2C4F0EBF25B584E300145C08 /* ModelPickerView.swift in Sources */,
+				2C4F0EBC25B5849C00145C08 /* ARViewContainer.swift in Sources */,
+				2C7C5EB225B597DB00B01373 /* CourseOverviewCardView.swift in Sources */,
+				2CA2383525B6F07400941D07 /* OESView.swift in Sources */,
 				2C51609425B4A3FA0051DC09 /* WebEmbed.swift in Sources */,
+				2C4F0EC325B5852600145C08 /* ModelPlacementConfirmView.swift in Sources */,
 				2C51608125B49FF60051DC09 /* AppDelegate.swift in Sources */,
+				2C7C5EBF25B5E57700B01373 /* APIResponse.swift in Sources */,
+				2C7C5EBB25B5D06000B01373 /* LoginView.swift in Sources */,
+				2CA2383825B7011A00941D07 /* AttachmentView.swift in Sources */,
+				2C7C5EAF25B58F3A00B01373 /* CourseCardView.swift in Sources */,
 				2C596B7025B4D2B7002AA054 /* Model.swift in Sources */,
+				2C7C5EB825B5A2B300B01373 /* FullCourseView.swift in Sources */,
+				2C7C5EC725B5F92B00B01373 /* HomeView.swift in Sources */,
+				2C7C5EA825B5869E00B01373 /* SelfServedARView.swift in Sources */,
+				2C89F88125B743F200BADA86 /* JitsiEmbed.swift in Sources */,
+				2C7C5EAC25B58AD100B01373 /* UIColor.swift in Sources */,
+				2C89F89725B74DE400BADA86 /* MeetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +351,9 @@
 		2C51608C25B49FF80051DC09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -229,6 +385,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -245,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,7 +415,9 @@
 		2C51608D25B49FF80051DC09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,6 +449,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -300,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -312,45 +472,49 @@
 		};
 		2C51608F25B49FF80051DC09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABCDDF07C03C94745300DE9 /* Pods-SkyMake App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SkyMake App/SkyMake App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyMake App/Preview Content\"";
 				DEVELOPMENT_TEAM = HV45H4766M;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SkyMake App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "company.theskyfallen.SkyMake-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_FRAMEWORK_NAMES = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		2C51609025B49FF80051DC09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41882F35C8736ED07E62BB8 /* Pods-SkyMake App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SkyMake App/SkyMake App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyMake App/Preview Content\"";
 				DEVELOPMENT_TEAM = HV45H4766M;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SkyMake App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "company.theskyfallen.SkyMake-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_FRAMEWORK_NAMES = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

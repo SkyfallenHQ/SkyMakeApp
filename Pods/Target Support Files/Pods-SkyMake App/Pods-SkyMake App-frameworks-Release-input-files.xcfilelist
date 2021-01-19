@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SkyMake App/Pods-SkyMake App-frameworks.sh
+${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework
+${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework
