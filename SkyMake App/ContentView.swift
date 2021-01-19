@@ -15,8 +15,8 @@ struct ContentView : View {
     @State private var password: String?
     @State private var userRole: String?
     
-    @State var apiEndpoint: String = "http://192.168.0.138:6810"
-    @State var appURL: String = "http://192.168.0.138:6713"
+    @State var apiEndpoint: String = "https://api.deducated.com"
+    @State var appURL: String = "https://app.deducated.com"
     @State var meetServer: String = "https://meet.jit.si"
     
     @State private var currentPage: String = "Login"
