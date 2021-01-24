@@ -25,6 +25,8 @@ struct HomeView: View {
     
     @Binding var appURL: String
     
+    @Binding var LCID: String
+    
     var body: some View {
         
         VStack {
@@ -34,7 +36,7 @@ struct HomeView: View {
                     HStack{
                         ForEach(0 ..< courses.count){
                             index in
-                            FullCourseView(courseName: courses[index].name, courseDate: courses[index].time, courseImage: courses[index].image, courseTeacher: courses[index].teacher, courseContents: courses[index].contents, appURL: self.$appURL, meetServer: self.$meetServer, currentPage: self.$currentPage, currentExam: self.$currentExam, docURL: self.$currentDoc, currentMeeting: self.$currentMeeting, username: self.$username, password: self.$password)
+                            FullCourseView(courseName: courses[index].name, courseDate: courses[index].time, courseImage: courses[index].image, courseTeacher: courses[index].teacher, courseContents: courses[index].contents, appURL: self.$appURL, meetServer: self.$meetServer, currentPage: self.$currentPage, currentExam: self.$currentExam, docURL: self.$currentDoc, currentMeeting: self.$currentMeeting, username: self.$username, password: self.$password, LCID: self.$LCID)
                             
                         }
                     }

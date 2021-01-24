@@ -11,20 +11,23 @@ struct ModelPlacementConfirmView: View {
     @Binding var isModelPicked: Bool
     @Binding var pickedModel: Model?
     @Binding var modelConfirmedforPlacement: Model?
+    var showCancelOption: Bool = true
     
     var body: some View {
         
         HStack{
-            Button(action: {
-                print("SkyMake App | DEBUG: Item placement cancelled by user")
-                resetModelPickedState()
-            }){
-                Image(systemName: "xmark")
-                    .frame(width: 60, height: 60)
-                    .font(.title)
-                    .background(Color.white.opacity(0.75))
-                    .cornerRadius(30)
-                    .padding(20)
+            if showCancelOption {
+                Button(action: {
+                    print("SkyMake App | DEBUG: Item placement cancelled by user")
+                    resetModelPickedState()
+                }){
+                    Image(systemName: "xmark")
+                        .frame(width: 60, height: 60)
+                        .font(.title)
+                        .background(Color.white.opacity(0.75))
+                        .cornerRadius(30)
+                        .padding(20)
+                }
             }
             Button(action: {
                 print("SkyMake App | DEBUG: Item placement confirmed by user")

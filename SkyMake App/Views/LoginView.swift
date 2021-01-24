@@ -21,6 +21,7 @@ struct LoginView: View {
     @State private var formPassword: String = ""
     @State private var incorrectPassword: Bool = false
     
+    @State private var thereIsAction: Bool = false
     
     var body: some View {
         VStack{
@@ -60,39 +61,51 @@ struct LoginView: View {
               }
             }
             Divider()
+            
+            if thereIsAction{
+               
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.black))
                 
-            Button(action: {
-                
-                let url_session = URLSession.shared
-                
-                let login_request_task = url_session.dataTask(with: URLRequest(url: URL(string: apiEndpoint + "/getUserRole?username="+formUsername+"&password="+formPassword)!)) { (data, URLResponse, error) in
-                    guard let data = data else { return }
-                    let apiAuthTestResp: APIResponse = try! JSONDecoder().decode(APIResponse.self, from: data)
-                    switch apiAuthTestResp.status?.code! {
+            } else {
+                Button(action: {
                     
-                    case "200":
-                        currentPage = "Home"
-                        username = formUsername
-                        password = formPassword
-                        userRole = apiAuthTestResp.result?.string
+                    thereIsAction = true
+                    
+                    let url_session = URLSession.shared
+                    
+                    let login_request_task = url_session.dataTask(with: URLRequest(url: URL(string: apiEndpoint + "/getUserRole?username="+formUsername.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!+"&password="+formPassword.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)!)) { (data, URLResponse, error) in
+                        guard let data = data else { return }
+                        let apiAuthTestResp: APIResponse = try! JSONDecoder().decode(APIResponse.self, from: data)
+                        switch apiAuthTestResp.status?.code! {
                         
-                    case "403":
-                        incorrectPassword = true
-                        
-                    default:
-                        incorrectPassword = true
+                        case "200":
+                            thereIsAction = false
+                            currentPage = "Home"
+                            username = formUsername
+                            password = formPassword
+                            userRole = apiAuthTestResp.result?.string
+                            
+                        case "403":
+                            thereIsAction = false
+                            incorrectPassword = true
+                            
+                        default:
+                            thereIsAction = false
+                            incorrectPassword = true
+                        }
                     }
+                    
+                    login_request_task.resume()
+                    
+                }){
+                    Text("Login")
+                        .foregroundColor(.white)
+                        .padding([.leading,.trailing], 20)
+                        .padding([.bottom,.top], 10)
+                        .background(Color.black)
+                        .cornerRadius(12)
                 }
-                
-                login_request_task.resume()
-                
-            }){
-                Text("Login")
-                    .foregroundColor(.white)
-                    .padding([.leading,.trailing], 20)
-                    .padding([.bottom,.top], 10)
-                    .background(Color.black)
-                    .cornerRadius(12)
             }
             
             Spacer()

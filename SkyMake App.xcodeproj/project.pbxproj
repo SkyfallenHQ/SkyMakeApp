@@ -18,6 +18,7 @@
 		2C596B7025B4D2B7002AA054 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B6F25B4D2B7002AA054 /* Model.swift */; };
 		2C596B7425B4D76A002AA054 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 2C596B7325B4D76A002AA054 /* FocusEntity */; };
 		2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */; };
+		2C704AFD25BCC25C001FD703 /* ARStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C704AFC25BCC25C001FD703 /* ARStatusResponse.swift */; };
 		2C7722F925B4ABAC003A16D2 /* planets.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722F825B4ABAC003A16D2 /* planets.usdz */; };
 		2C7722FC25B4ABB5003A16D2 /* skeleton.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */; };
 		2C7722FF25B4ABBD003A16D2 /* pulley.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C7722FE25B4ABBD003A16D2 /* pulley.usdz */; };
@@ -29,6 +30,9 @@
 		2C7C5EBB25B5D06000B01373 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EBA25B5D06000B01373 /* LoginView.swift */; };
 		2C7C5EBF25B5E57700B01373 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EBE25B5E57700B01373 /* APIResponse.swift */; };
 		2C7C5EC725B5F92B00B01373 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7C5EC625B5F92B00B01373 /* HomeView.swift */; };
+		2C7DCE4D25BD7D0100C714B6 /* InClassARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7DCE4C25BD7D0100C714B6 /* InClassARView.swift */; };
+		2C7DCE5025BDC9E500C714B6 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7DCE4F25BDC9E500C714B6 /* ConnectionCheck.swift */; };
+		2C7E9F6625BCAC4E00722834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E9F6525BCAC4E00722834 /* LaunchScreen.storyboard */; };
 		2C89F88125B743F200BADA86 /* JitsiEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F88025B743F200BADA86 /* JitsiEmbed.swift */; };
 		2C89F89725B74DE400BADA86 /* MeetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89F89625B74DE400BADA86 /* MeetView.swift */; };
 		2CA2383525B6F07400941D07 /* OESView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2383425B6F07400941D07 /* OESView.swift */; };
@@ -49,6 +53,7 @@
 		2C51609325B4A3FA0051DC09 /* WebEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebEmbed.swift; sourceTree = "<group>"; };
 		2C596B6F25B4D2B7002AA054 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2C596B7625B4D7B4002AA054 /* SkyMakeARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyMakeARView.swift; sourceTree = "<group>"; };
+		2C704AFC25BCC25C001FD703 /* ARStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARStatusResponse.swift; sourceTree = "<group>"; };
 		2C7722F825B4ABAC003A16D2 /* planets.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = planets.usdz; sourceTree = "<group>"; };
 		2C7722FB25B4ABB5003A16D2 /* skeleton.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = skeleton.usdz; sourceTree = "<group>"; };
 		2C7722FE25B4ABBD003A16D2 /* pulley.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pulley.usdz; sourceTree = "<group>"; };
@@ -61,6 +66,12 @@
 		2C7C5EBA25B5D06000B01373 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2C7C5EBE25B5E57700B01373 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		2C7C5EC625B5F92B00B01373 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2C7DCE4C25BD7D0100C714B6 /* InClassARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InClassARView.swift; sourceTree = "<group>"; };
+		2C7DCE4F25BDC9E500C714B6 /* ConnectionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		2C7E9F6525BCAC4E00722834 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C7E9F6925BCADE400722834 /* MadeTommyRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MadeTommyRegular.otf; sourceTree = "<group>"; };
+		2C7E9F6A25BCADEC00722834 /* MadeTommyMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MadeTommyMedium.otf; sourceTree = "<group>"; };
+		2C7E9F6B25BCADF400722834 /* MadeTommyLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MadeTommyLight.otf; sourceTree = "<group>"; };
 		2C89F88025B743F200BADA86 /* JitsiEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiEmbed.swift; sourceTree = "<group>"; };
 		2C89F89625B74DE400BADA86 /* MeetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetView.swift; sourceTree = "<group>"; };
 		2CA2383425B6F07400941D07 /* OESView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OESView.swift; sourceTree = "<group>"; };
@@ -98,6 +109,8 @@
 				2CA2383425B6F07400941D07 /* OESView.swift */,
 				2CA2383725B7011A00941D07 /* AttachmentView.swift */,
 				2C89F89625B74DE400BADA86 /* MeetView.swift */,
+				2C7DCE4C25BD7D0100C714B6 /* InClassARView.swift */,
+				2C7DCE4F25BDC9E500C714B6 /* ConnectionCheck.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 		2C51607F25B49FF60051DC09 /* SkyMake App */ = {
 			isa = PBXGroup;
 			children = (
+				2C7E9F6825BCADA900722834 /* Fonts */,
 				2C7C5EBD25B5E56700B01373 /* Structures */,
 				2C7C5EB425B59FDF00B01373 /* SkyMake App.entitlements */,
 				2C7C5EAA25B58AC400B01373 /* Extensions */,
@@ -134,6 +148,7 @@
 				2C51608625B49FF80051DC09 /* Assets.xcassets */,
 				2C51608B25B49FF80051DC09 /* Info.plist */,
 				2C51608825B49FF80051DC09 /* Preview Content */,
+				2C7E9F6525BCAC4E00722834 /* LaunchScreen.storyboard */,
 			);
 			path = "SkyMake App";
 			sourceTree = "<group>";
@@ -179,8 +194,19 @@
 			isa = PBXGroup;
 			children = (
 				2C7C5EBE25B5E57700B01373 /* APIResponse.swift */,
+				2C704AFC25BCC25C001FD703 /* ARStatusResponse.swift */,
 			);
 			path = Structures;
+			sourceTree = "<group>";
+		};
+		2C7E9F6825BCADA900722834 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E9F6B25BCADF400722834 /* MadeTommyLight.otf */,
+				2C7E9F6A25BCADEC00722834 /* MadeTommyMedium.otf */,
+				2C7E9F6925BCADE400722834 /* MadeTommyRegular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		314DAD0D1C45823C278B9708 /* Frameworks */ = {
@@ -268,6 +294,7 @@
 				2C51608A25B49FF80051DC09 /* Preview Assets.xcassets in Resources */,
 				2C51608725B49FF80051DC09 /* Assets.xcassets in Resources */,
 				2C7722FF25B4ABBD003A16D2 /* pulley.usdz in Resources */,
+				2C7E9F6625BCAC4E00722834 /* LaunchScreen.storyboard in Resources */,
 				2C7722FC25B4ABB5003A16D2 /* skeleton.usdz in Resources */,
 				2C7722F925B4ABAC003A16D2 /* planets.usdz in Resources */,
 			);
@@ -324,6 +351,7 @@
 			files = (
 				2C51608325B49FF60051DC09 /* ContentView.swift in Sources */,
 				2C596B7725B4D7B4002AA054 /* SkyMakeARView.swift in Sources */,
+				2C704AFD25BCC25C001FD703 /* ARStatusResponse.swift in Sources */,
 				2C4F0EBF25B584E300145C08 /* ModelPickerView.swift in Sources */,
 				2C4F0EBC25B5849C00145C08 /* ARViewContainer.swift in Sources */,
 				2C7C5EB225B597DB00B01373 /* CourseOverviewCardView.swift in Sources */,
@@ -336,12 +364,14 @@
 				2CA2383825B7011A00941D07 /* AttachmentView.swift in Sources */,
 				2C7C5EAF25B58F3A00B01373 /* CourseCardView.swift in Sources */,
 				2C596B7025B4D2B7002AA054 /* Model.swift in Sources */,
+				2C7DCE5025BDC9E500C714B6 /* ConnectionCheck.swift in Sources */,
 				2C7C5EB825B5A2B300B01373 /* FullCourseView.swift in Sources */,
 				2C7C5EC725B5F92B00B01373 /* HomeView.swift in Sources */,
 				2C7C5EA825B5869E00B01373 /* SelfServedARView.swift in Sources */,
 				2C89F88125B743F200BADA86 /* JitsiEmbed.swift in Sources */,
 				2C7C5EAC25B58AD100B01373 /* UIColor.swift in Sources */,
 				2C89F89725B74DE400BADA86 /* MeetView.swift in Sources */,
+				2C7DCE4D25BD7D0100C714B6 /* InClassARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +520,7 @@
 				REEXPORTED_FRAMEWORK_NAMES = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -514,7 +544,7 @@
 				REEXPORTED_FRAMEWORK_NAMES = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
